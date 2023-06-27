@@ -29,6 +29,9 @@
     height: auto;
     border-radius: 50%;
   }
+  @media(orientation:landscape){
+    
+  }
 
   
    
