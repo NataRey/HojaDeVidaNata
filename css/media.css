@@ -1,3 +1,21 @@
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main";
+  }
+  .header {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  .nav {
+    height: auto;
+    padding: 10px;
+  }
+}
 @media (max-width: 620px) {
     .container {
       grid-template-columns: 1fr;
@@ -13,6 +31,7 @@
     }
     .nav {
       height: auto;
+      padding: 10px;
     }
   }
   
@@ -30,8 +49,16 @@
     border-radius: 50%;
   }
   @media(orientation:landscape){
-    
+    .container .nav {
+      grid-area: nav;
+      background-color: var(--primarioOscuro);
+      border: 2px solid var(--secundarioClaro);
+      color: var(--secundarioClaro);
+      height: 1155px;
+      padding: 20px;
+    }
   }
+  
 
   
    
