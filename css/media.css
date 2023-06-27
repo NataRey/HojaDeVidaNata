@@ -1,0 +1,40 @@
+@media (max-width: 620px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main";
+    }
+    .header {
+      padding: 10px;
+      font-size: 1.2em;
+    }
+    .nav {
+      height: auto;
+    }
+  }
+  
+  /* Estilos para dispositivos móviles con un ancho máximo de 360px */
+  @media (max-width: 360px) {
+    .header {
+      padding: 5px;
+      font-size: 1em;
+    }
+  }
+  
+  .container .nav .img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  
+   
+  
+  
+  
+  
+  
+  
+  

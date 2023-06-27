@@ -1,0 +1,95 @@
+:root{
+    --primarioOscuro: #17252A;
+    --primarioClaro: #3AAFA9;
+    --secundario: #2B7A78;
+    --secundarioClaro: #DEF2F1;
+    --fuentePrincipal:Arial, sans-serif;
+}   
+body {
+  font-family: var(--fuentePrincipal);
+  margin: 0;
+  background-image: url("https://w0.peakpx.com/wallpaper/3/147/HD-wallpaper-programming-minimalism-minified-world-binary-and-mobile-background-minimalist-programmer.jpg");
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas:
+    "nav header" 
+    "nav main"
+    "nav footer" ;
+    gap: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    background-color: var(--secundario);
+    color: var(--primarioOscuro);
+    border: 2px solid var(--secundarioClaro);
+}
+.header h1 {
+    color:var(--secundarioClaro);
+}
+.header h4 {
+  color:var(--secundarioClaro);
+}
+
+.header p {
+  padding: 0 20px 0 20px;
+  color:var(--secundarioClaro);
+}
+
+.container .nav {
+  grid-area: nav;
+  background-color: var(--primarioOscuro);
+  border: 2px solid var(--secundarioClaro);
+  color: var(--secundarioClaro);
+  height: 1155px;
+  padding: 20px;
+}
+
+.container .nav .img{
+  max-width: 90%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.container .main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: "educacion" "section1" "section2" "experiencia" "habilidades" "cursos" ;
+  gap: 5px;
+}
+
+.main .educacion {
+  grid-area: educacion;
+  background-color:var(--primarioClaro);
+  border: 2px solid var(--secundarioClaro);
+}
+.main .section1 {
+  grid-area: section1;
+  background-color:var(--primarioClaro);
+  border: 2px solid var(--secundarioClaro);
+}
+.main .section2 {
+  grid-area: section2;
+  background-color:var(--primarioClaro);
+  border: 2px solid var(--secundarioClaro);
+}
+.main .experiencia {
+  grid-area: experiencia;
+  background-color: var(--primarioClaro);
+  border: 2px solid var(--secundarioClaro);
+}
