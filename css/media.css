@@ -48,7 +48,7 @@
     height: auto;
     border-radius: 50%;
   }
-  @media(orientation:landscape){
+  /*@media(orientation:landscape){
     .container .nav {
       grid-area: nav;
       background-color: var(--primarioOscuro);
@@ -57,7 +57,7 @@
       height: 1155px;
       padding: 20px;
     }
-  }
+  }*/
   
 
   
