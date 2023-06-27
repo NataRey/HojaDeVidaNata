@@ -77,6 +77,7 @@ body {
   grid-area: educacion;
   background-color:var(--primarioClaro);
   border: 2px solid var(--secundarioClaro);
+  padding-top: 20%;
 }
 .main .section1 {
   grid-area: section1;
