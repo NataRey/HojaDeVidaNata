@@ -1,6 +1,7 @@
 @media (max-width: 620px) {
     .container {
       grid-template-columns: 1fr;
+      grid-template-rows: auto;
       grid-template-areas:
         "header"
         "nav"
